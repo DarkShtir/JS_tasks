@@ -1,3 +1,5 @@
+'use strict';
+
 let menuItem = document.querySelectorAll('.menu-item'),
     menu = document.querySelector('.menu'),
     adv = document.querySelector('.column .adv'),
@@ -12,7 +14,7 @@ menu.appendChild(newMenuItem);
 
 menu.insertBefore(menuItem[2], menuItem[1]);
 
-column.removeChild(adv);
+column.removeChild(adv); //acv.remove()-более простой способ без получения класса column
 
 document.body.style.backgroundImage = 'url(img/apple_true.jpg)';
 title.textContent = 'Мы продаем только подлинную технику Apple';
